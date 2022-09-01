@@ -8,7 +8,7 @@ fun main(){
 //    println("my name is ${name + lastName}")
 //
 //    println("this is 2\$a") //그냥 $표시하려면 \
-    checkNum(1)
+    forAndWhile()
 
 }
 
@@ -71,9 +71,7 @@ fun checkNum(score : Int) : Unit{ //Expression (무언가 해서 값 반환)
 // Expression vs Statement
 
 // 5. Array and List
-
 // Array == mutable
-
 // List 1. List 2.MutableList
 
 fun array(){
@@ -90,5 +88,55 @@ fun array(){
     var arrayList = arrayListOf<Int>()
     arrayList.add(10)
     arrayList.add(20)
+
+}
+
+// 6. for and while
+
+fun forAndWhile(){
+    val students = arrayListOf("yoojin","joyce","jennifer")
+
+    for (name in students){
+        println("${name}")
+    }
+
+    for ((index,name) in students.withIndex()){
+        println("${index+1}번째 학생: ${name}")
+    }
+
+    var sum : Int = 0
+    for(i in 1..10 step 2){
+        sum += i //1 3 5 7 9
+    }
+    println(sum)
+    for(i in 10 downTo 1){
+        sum -= i //10 9 8 7 6 5 4 3 2 1
+    }
+    for(i in 1 until 100){
+        sum -= i //100 포함하지않음
+    }
+
+
+    var index=0
+    while(index<10){
+        println("current index: ${index}")
+        index++
+    }
+
+}
+
+// 7. Nullable , NonNull
+fun nullcheck(){
+    //NPE: Null pointer Exception
+
+    var name : String = "yoojin"
+
+    var nullName : String? = null //타입 생략 불가
+    // ERROR  var nullName : String = null
+
+    var nameInUpperCase = name.toUpperCase()
+
+    var nullNameInUpperCase = nullName?.toUpperCase()
+
 
 }
