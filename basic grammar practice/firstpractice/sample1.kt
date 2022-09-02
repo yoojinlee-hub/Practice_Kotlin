@@ -8,7 +8,7 @@ fun main(){
 //    println("my name is ${name + lastName}")
 //
 //    println("this is 2\$a") //그냥 $표시하려면 \
-    forAndWhile()
+    nullcheck()
 
 }
 
@@ -138,5 +138,21 @@ fun nullcheck(){
 
     var nullNameInUpperCase = nullName?.toUpperCase()
 
+    //?:엘비스 연산자
+    val lastName : String? = null
+    val fullName = name + ""+ (lastName?: "No lastname")
 
+    println(fullName)
 }
+//!!
+fun ignoreNullls(str : String?){
+    val mNotNull : String = str!! //절대로 null 아님
+    val upper = mNotNull.toUpperCase()
+
+    //?:
+    val email : String? = "adria@nanana.com"
+    email?.let{
+        println("my email is ${email}")
+    }
+}
+
