@@ -1,4 +1,4 @@
-package com.example.practiceadvancedgrammers
+package com.example.practicegrammer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
