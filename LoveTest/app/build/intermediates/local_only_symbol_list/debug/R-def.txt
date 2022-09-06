@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable loveimage
+drawable next
+id imageView
+id imageView2
+id nav_graph
+id nav_host_fragment
+id textView
+layout activity_main
+layout fragment_main
+layout fragment_question
+layout fragment_result
+layout fragment_selection
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation nav_graph
+string app_name
+string main_title
+style Theme.LoveTest
+xml backup_rules
+xml data_extraction_rules
