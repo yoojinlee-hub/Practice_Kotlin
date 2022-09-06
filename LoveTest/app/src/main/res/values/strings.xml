@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LoveTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="main_title">love test</string>
 </resources>
