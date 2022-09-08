@@ -2,4 +2,5 @@
     <string name="app_name">LoveTest</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="main_title">love test</string>
+    <string name="question">There were favorite flowers \n in the flower base.\n As time goes, \n the flowers have all withered. \n What are you going to do with that?</string>
 </resources>
