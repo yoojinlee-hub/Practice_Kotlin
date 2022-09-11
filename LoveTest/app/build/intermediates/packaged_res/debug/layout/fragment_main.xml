@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".fragment.MainFragment">
+    tools:context=".fragment.MainFragment"
+    >
 
     <TextView
         android:id="@+id/textView"
@@ -19,7 +20,7 @@
         android:textSize="56dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,10 +30,11 @@
         android:layout_height="307dp"
         android:layout_marginStart="76dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="272dp"
+        android:layout_marginBottom="388dp"
         android:src="@drawable/loveimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView

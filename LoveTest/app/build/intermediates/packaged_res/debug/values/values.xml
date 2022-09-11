@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">LoveTest</string>
     <string name="main_title">love test</string>
+    <string name="question">There were favorite flowers \n in the flower base.\n As time goes, \n the flowers have all withered. \n What are you going to do with that?</string>
     <style name="Theme.LoveTest" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

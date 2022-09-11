@@ -2558,6 +2558,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable previous
+drawable question_img
+drawable selection
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2624,11 +2627,14 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_mainFragment_to_questionFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_questionFragment_to_selectionFragment
+id action_selectionFragment_to_resultFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2661,6 +2667,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_back
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2811,6 +2818,7 @@ id listMode
 id list_item
 id locale
 id ltr
+id mainFragment
 id masked
 id match_constraint
 id match_parent
@@ -2893,6 +2901,10 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id option_1
+id option_2
+id option_3
+id option_4
 id outline
 id outward
 id overshoot
@@ -2912,9 +2924,11 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id questionFragment
 id radio
 id ratio
 id rectangles
+id resultFragment
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2945,6 +2959,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id selectionFragment
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3376,6 +3391,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string question
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
