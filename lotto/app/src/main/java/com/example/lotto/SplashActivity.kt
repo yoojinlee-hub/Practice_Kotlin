@@ -15,12 +15,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        animationView.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         val handler = Handler(Looper.getMainLooper())
         val runnable = Runnable{
             val intent = Intent(this,MainActivity::class.java)
@@ -29,14 +23,12 @@ class SplashActivity : AppCompatActivity() {
         }
         handler.postDelayed(runnable,3000)
 
-        
-        //https://velog.io/@sinbee0402/AndroidKotlin-Lottie-Splash
-        Handler(Looper.getMainLooper()).postDelayed({  //3초(SPLASH_TIME_OUT)가 지나면 이 메서드가 실행됨
-            //main activity 시작
-            startActivity(Intent(this, MainActivity::class.java))
-            //액티비티 닫기
+        animationView.setOnClickListener{
+            handler.removeCallbacks(runnable)
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
             finish()
-        }, SPLASH_TIME_OUT)
+        }
     }
 
 }

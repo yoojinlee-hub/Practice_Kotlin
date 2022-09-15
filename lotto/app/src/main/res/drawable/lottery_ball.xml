@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="4dp" android:color="@color/ballStroke"/> <!--외곽선-->
+            <solid android:color="@color/ballSolid"/> <!--내부-->
+        </shape>
+    </item>
+</selector>

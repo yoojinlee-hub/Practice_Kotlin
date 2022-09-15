@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projects/Practice_Kotlin/lotto/app/src/main/res/drawable/lottery_ball.xml" value="0.1" />
         <entry key="..\:/projects/Practice_Kotlin/lotto/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/projects/Practice_Kotlin/lotto/app/src/main/res/layout/activity_splash.xml" value="0.14130434782608695" />
       </map>
