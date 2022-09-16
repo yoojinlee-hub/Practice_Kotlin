@@ -86,7 +86,7 @@
     </LinearLayout>
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottoryButton"
+        android:id="@+id/lotteryButton"
         android:layout_width="300dp"
         android:layout_height="200dp"
         app:lottie_rawRes="@raw/lottery_whirl"
