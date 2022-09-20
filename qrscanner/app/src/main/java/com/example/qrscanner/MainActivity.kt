@@ -1,11 +1,13 @@
 package com.example.qrscanner
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.google.zxing.integration.android.IntentIntegrator
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +36,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"scanned : ${result.contents} format : ${result.formatName}", Toast.LENGTH_LONG).show();
             }else{
                 Toast.makeText(this,"Cancelled",Toast.LENGTH_LONG).show();
+            }
+            if(result.barcodeImagePath != null){
+                val bitmap = BitmapFactory.decodeFile(result.barcodeImagePath)
+                scannedBitmap.setImageBitmap(bitmap)
             }
         }else{
             super.onActivityResult(requestCode, resultCode, data)

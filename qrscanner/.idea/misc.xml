@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/projects/Practice_Kotlin/qrscanner/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
+        <entry key="..\:/projects/Practice_Kotlin/qrscanner/app/src/main/res/layout/activity_my_barcode_reader.xml" value="0.175" />
+        <entry key="..\:/projects/Practice_Kotlin/qrscanner/app/src/main/res/layout/custom_barcode_scanner.xml" value="0.175" />
       </map>
     </option>
   </component>

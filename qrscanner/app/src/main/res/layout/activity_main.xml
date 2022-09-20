@@ -5,18 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QR코드리더"
-        android:onClick="startBarcodeReader"/>
+        android:onClick="startBarcodeReader"
+        android:text="QR코드리더" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startBarcodeReaderCustom"
         android:text="QR코드리더 커스텀" />
+
+    <ImageView
+        android:id="@+id/scannedBitmap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
 </LinearLayout>
