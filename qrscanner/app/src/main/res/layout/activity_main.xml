@@ -20,6 +20,12 @@
         android:onClick="startBarcodeReaderCustom"
         android:text="QR코드리더 커스텀" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startBarcodeReaderCustomActivity"
+        android:text="QR코드리더 커스텀 액티비티" />
+
     <ImageView
         android:id="@+id/scannedBitmap"
         android:layout_width="200dp"

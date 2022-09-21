@@ -29,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         integrator.initiateScan()
     }
 
+    fun startBarcodeReaderCustomActivity(view: View){
+        val integrator = IntentIntegrator(this)
+        integrator.setBarcodeImageEnabled(true)
+        integrator.captureActivity = MyBarcodeReaderActivity::class.java
+        integrator.initiateScan()
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         val result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if(result!=null){
