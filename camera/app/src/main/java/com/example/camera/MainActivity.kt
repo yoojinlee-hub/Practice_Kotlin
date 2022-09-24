@@ -1,6 +1,8 @@
 package com.example.camera
 
 import android.content.Intent
+import android.graphics.BitmapFactory
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
@@ -15,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var photoFile: File
 
+    @android.support.annotation.RequiresApi(Build.VERSION_CODES.FROYO)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -38,7 +41,10 @@ class MainActivity : AppCompatActivity() {
         when (requestCode){
             REQUEST_CODE_FOR_IMAGE_CAPTURE -> {
                 if(resultCode == RESULT_OK){
-                    Glide.with(this).load(photoFile).into(binding.image)
+                    BitmapFactory.decodeFile(photoFile.absolutePath)?.let{
+                        binding.image.setImageBitmap(it)
+                    }
+                    //Glide.with(this).load(photoFile).into(binding.image)
                 }else{
                     Toast.makeText(this,"취소 되었습니다", Toast.LENGTH_LONG).show()
                 }
