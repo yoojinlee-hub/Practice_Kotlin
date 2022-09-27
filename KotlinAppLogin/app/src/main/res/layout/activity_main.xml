@@ -7,9 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_subject"
         android:layout_width="226dp"
         android:layout_height="79dp"
         android:text="Login App Practice"
+        android:textColor="#009688"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,46 +22,54 @@
         tools:visibility="visible" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/ed_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="122dp"
+        android:text="id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="289dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/ed_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="122dp"
+        android:text="password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="389dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:background="#2196F3"
+        android:backgroundTint="#2196F3"
+        android:text="Login"
+        android:textStyle="bold"
+        app:rippleColor="#F4EFEF"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="620dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="아이디:"
+        android:textColor="#673AB7"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="308dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="비밀번호:"
+        android:textColor="#673AB7"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="397dp" />
 
