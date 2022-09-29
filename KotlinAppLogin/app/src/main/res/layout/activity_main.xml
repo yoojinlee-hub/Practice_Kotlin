@@ -52,8 +52,8 @@
         android:text="Login"
         android:textStyle="bold"
         app:rippleColor="#F4EFEF"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="620dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="618dp" />
 
     <TextView
         android:id="@+id/tv_id"
