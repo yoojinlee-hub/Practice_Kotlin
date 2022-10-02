@@ -15,60 +15,71 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102"
+        app:layout_constraintVertical_bias="0.105"
         tools:visibility="visible" />
 
     <EditText
         android:id="@+id/ed_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
         android:ems="10"
         android:inputType="textPersonName"
+<<<<<<< Updated upstream
+=======
+        app:layout_constraintBottom_toTopOf="@+id/tv_pw"
+>>>>>>> Stashed changes
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/ed_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_id" />
 
     <Button
         android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
         android:background="#2196F3"
         android:backgroundTint="#2196F3"
         android:text="Login"
         android:textStyle="bold"
-        app:rippleColor="#F4EFEF"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="618dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#F4EFEF" />
 
     <TextView
         android:id="@+id/tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="308dp"
         android:text="아이디:"
         android:textColor="#673AB7"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="14dp"
         android:text="비밀번호:"
         android:textColor="#673AB7"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintEnd_toStartOf="@+id/ed_pw"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

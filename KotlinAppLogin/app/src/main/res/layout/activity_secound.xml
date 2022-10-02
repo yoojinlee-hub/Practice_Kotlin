@@ -13,6 +13,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
+<<<<<<< Updated upstream
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="176dp" />
+=======
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>
